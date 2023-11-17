@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CS FA1 - HTML/CSS">
+    <meta name="keywords" content="HTML, CSS, web development">
+    <meta name="author" content="Sasha Isabelle A. Mordeno">
+
+    <title>CS FA1</title>
+
+    <style>
+        body {
+            font-size: 2em;
+        }
+
+        .linkno1 {
+            text-decoration: none;
+        }
+
+        .linkno1:link {
+            color: white;
+            background-color: rgb(14, 14, 83);
+        }
+
+        .linkno1:visited {
+            color: white;
+            background-color: rgb(255, 85, 0);
+        }
+
+        .linkno1:hover {
+            color: yellowgreen;
+            background-color: gold;
+        }
+
+        .linkno1:active {
+            color: rgb(230, 224, 76);
+            background-color:palevioletred;
+        }
+
+        .linkno2 {
+            text-decoration: none;
+        }
+
+        .linkno2:link {
+            color: white;
+            background-color: rgb(42, 162, 170);
+        }
+
+        .linkno2:visited {
+            color: white;
+            background-color: rgb(255, 85, 0);
+        }
+
+        .linkno2:hover {
+            color: yellowgreen;
+            background-color: gold;
+        }
+
+        .linkno2:active {
+            color: rgb(124, 0, 128);
+            background-color: skyblue;
+        }
+
+        div {
+            border: 2px solid black;
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+        }
+
+        div:target#div1 {
+            background-color: rgb(14, 14, 83);
+            color: rgb(235, 192, 84);
+        }
+
+        div:target#div2 {
+            background-color: rgb(42, 162, 170);
+            color: rgb(235, 192, 84);
+            border: 10px dotted green;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="linkno1" href="#div1">First Link</a>
+    <a class="linkno2" href="#div2">Second Link</a>
+    <br><br>
+    <div id="div1">Div 1 here</div>
+    <br>
+    <div id="div2">Div 2 here</div>
+</body>
+
+</html>
